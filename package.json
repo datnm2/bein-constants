@@ -1,0 +1,31 @@
+{
+  "name": "@beincom/constants",
+  "version": "1.0.0",
+  "description": "Beincom shared constant definitions",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prebuild": "rimraf lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datnm2/bein-constants.git"
+  },
+  "keywords": [
+    "beincom"
+  ],
+  "author": "Dat Nguyen (Beincom)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/datnm2/bein-constants/issues"
+  },
+  "homepage": "https://github.com/datnm2/bein-constants#readme",
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "typescript": "^4.9.4"
+  }
+}

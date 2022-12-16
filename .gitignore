@@ -1,0 +1,47 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+node_modules/
+
+# testing
+coverage/
+
+# production
+dist/
+
+lib/
+
+# OS misc
+.DS_Store
+
+# dotenv
+.env.example
+.env*
+.npmrc
+# k8s
+kube/*/confidentials/*
+
+# log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# packages
+.eslintcache
+
+.serverless
+layers
+
+./vscode
+.vscode/
+
+.idea
+
+src/generated-schema.graphql
+
+data
+
+launch.js
+google-services.json
+
+docker-compose.override.yml
