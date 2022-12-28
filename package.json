@@ -1,6 +1,6 @@
 {
   "name": "@beincom/constants",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Beincom shared constant definitions",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",

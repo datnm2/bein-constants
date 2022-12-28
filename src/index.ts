@@ -7,3 +7,4 @@ export enum JOIN_STATUS {
 
 export * from "./permission";
 export * from "./shared.dto";
+export * from "./user-report";
