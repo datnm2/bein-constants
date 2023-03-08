@@ -1,3 +1,13 @@
+export enum ROLE_TYPE {
+  OWNER = "OWNER",
+  COMMUNITY_ADMIN = "COMMUNITY_ADMIN",
+  COMMUNITY_MEMBER = "COMMUNITY_MEMBER", // deprecated
+  GROUP_ADMIN = "GROUP_ADMIN",
+  GROUP_MEMBER = "GROUP_MEMBER", // deprecated
+  MEMBER = "MEMBER",
+  CUSTOMIZED = "CUSTOMIZED", // not used yet
+}
+
 export const PERMISSION_KEY = {
   // Organization
   CRUD_CUSTOM_SCHEME: "crud_custom_scheme",
@@ -5,6 +15,7 @@ export const PERMISSION_KEY = {
   DELETE_INNER_GROUPS: "delete_inner_groups",
   ARCHIVE_GROUPS: "archive_groups",
   ORDER_MOVE_GROUP_STRUCTURE: "order_move_group_structure",
+  CUD_TAGS: "cud_tags",
 
   // Management
   INVITE_MEMBER: "invite_member",
@@ -35,12 +46,9 @@ export const PERMISSION_KEY = {
   DELETE_OWN_MESSAGE: "delete_own_message",
   CHANNEL_MENTIONS: "channel_mentions",
   DELETE_OTHERS_MESSAGE: "delete_others_message",
-};
 
-export enum ROLE_TYPE {
-  ACCOUNT_OWNER = "ACCOUNT_OWNER",
-  COMMUNITY_ADMIN = "COMMUNITY_ADMIN",
-  GROUP_ADMIN = "GROUP_ADMIN",
-  MEMBER = "MEMBER",
-  CUSTOMIZED = "CUSTOMIZED",
-}
+  // Permission key by role
+  ROLE_COMMUNITY_OWNER: `role_${ROLE_TYPE.OWNER}`,
+  ROLE_COMMUNITY_ADMIN: `role_${ROLE_TYPE.COMMUNITY_ADMIN}`,
+  ROLE_GROUP_ADMIN: `role_${ROLE_TYPE.GROUP_ADMIN}`,
+};
