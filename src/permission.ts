@@ -32,6 +32,7 @@ export const PERMISSION_KEY = {
   CRUD_SERIES: 'crud_series',
   EDIT_OWN_CONTENT_SETTING: 'edit_own_content_setting',
   PIN_CONTENT: 'pin_content',
+  CUD_QUIZ: 'cud_quiz',
 
   // CHAT Channel
   CRUD_UNOFFICIAL_CHANNEL: 'crud_uc',
